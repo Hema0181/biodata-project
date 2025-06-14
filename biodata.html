@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata Page</title>
+</head>
+<body>
+    <h1>Your Biodata</h1>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>D.O.B:</strong> <span id="dob"></span></p>
+    <p><strong>Qualification:</strong> <span id="qualification"></span></p>
+    <p><strong>Father's Name:</strong> <span id="fathername"></span></p>
+    <p><strong>Mother's Name:</strong> <span id="mothername"></span></p>
+    <p><strong>Age:</strong> <span id="age"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Gender:</strong> <span id="gender"></span></p>
+    <p><strong>Father's Occupation:</strong> <span id="fatheroccupation"></span></p>
+    <p><strong>Address:</strong> <span id="address"></span></p>
+    <p><strong>Phone No.:</strong> <span id="phone"></span></p>
+
+    <script>
+        // Get data from URL parameters
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("name").textContent = params.get("name");
+        document.getElementById("dob").textContent = params.get("dob");
+        document.getElementById("qualification").textContent = params.get("qualification");
+        document.getElementById("fathername").textContent = params.get("fathername");
+        document.getElementById("mothername").textContent = params.get("mothername");
+        document.getElementById("age").textContent = params.get("age");
+        document.getElementById("email").textContent = params.get("email");
+        document.getElementById("gender").textContent = params.get("gender");
+        document.getElementById("fatheroccupation").textContent = params.get("fatheroccupation");
+        document.getElementById("address").textContent = params.get("address");
+        document.getElementById("phone").textContent = params.get("phone");
+    </script>
+</body>
+</html>
+
